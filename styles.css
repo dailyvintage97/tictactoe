@@ -1,0 +1,251 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡgenericㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+a {
+  text-decoration: none;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡheaderㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+html {
+  --main-bg-color: rgba(134, 6, 253, 0.788);
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+header p {
+  margin: 1rem;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+/* --------------------section player-area--------------------- */
+
+#player-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 40%;
+  margin: 3rem auto 0.5rem auto;
+  height: 10rem;
+}
+
+#player-area div {
+  width: 100;
+  background-color: rgba(216, 183, 236, 0.74);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 4px 2px 8px rgb(160, 159, 159);
+  padding: 1rem;
+}
+
+#player-area div h2 {
+  font-size: 1rem;
+  color: rgb(44, 44, 44);
+  margin: 0;
+  padding: 0;
+}
+#player-area div p {
+  font-size: 1.5rem;
+  margin: 0.4rem;
+  font-weight: bold;
+  color: purple;
+}
+#player-area span {
+  display: block;
+  margin: 0.4rem 0.4rem 1rem 0.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(61, 1, 61);
+}
+
+#player-area button {
+  background-color: transparent;
+  border: none;
+  color: blueviolet;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡoverayㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+#overay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 26, 27, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#overay1 {
+  display: none;
+}
+
+#overay2 {
+  display: none;
+}
+
+#overay div {
+  background-color: white;
+  width: 30%;
+  height: 20%;
+  margin: 10rem auto 10rem auto;
+  padding: 0.5rem;
+}
+
+#overay div h2 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.4rem;
+}
+
+#overay div p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+#overay div input {
+  border-radius: 5px;
+  border: 1px solid rgba(29, 26, 27, 0.3);
+  width: 55%;
+  display: block;
+  margin: 0.4rem auto;
+  padding: 0.3rem;
+}
+
+#overay div button {
+  padding: 0.3rem 0.7rem;
+  margin: 0 0 0 0;
+  border: none;
+  border-radius: 3px;
+}
+#cancel1,
+#cancel2 {
+  background-color: white;
+  color: var(--main-bg-color);
+}
+
+#cancel:hover,
+#cance2:hover {
+  background-color: rgb(214, 211, 211);
+}
+
+#confirm1,
+#confirm2 {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+
+#confirm1:hover,
+#confirm2:hover {
+  background-color: rgba(163, 70, 250, 0.788);
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 버튼ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+#button {
+  text-align: center;
+  margin: 1rem;
+  font-family: inherit;
+}
+
+#button button {
+  background-color: var(--main-bg-color);
+  color: white;
+  border-radius: 4px;
+  padding: 0.3rem 0.9rem;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsection whoswinㅡㅡㅡㅡㅡㅡㅡ*/
+
+#whoswin {
+  background-color: rgb(61, 1, 61);
+  color: white;
+  text-align: center;
+  width: 35%;
+  margin: 2.5rem auto 1rem auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 4px 2px 8px rgb(160, 159, 159);
+  display: none;
+}
+
+#whoswin p {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+whoswin span {
+  font-size: 0.4rem;
+  font-weight: 200;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡturnㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+#turn {
+  text-align: center;
+  margin-top: 0;
+}
+
+#turn p {
+  color: rgb(44, 44, 44);
+  font-weight: 500;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡgame-areaㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+#game-area {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 20rem;
+  height: 20rem;
+
+  margin: 0.5rem auto 20rem auto;
+}
+
+.tic {
+  background-color: rgba(224, 187, 248, 0.74);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tic:hover {
+  background-color: rgba(167, 56, 241, 0.74);
+}
+
+.tic span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.tic.touched {
+  background-color: rgba(167, 56, 241, 0.74);
+}

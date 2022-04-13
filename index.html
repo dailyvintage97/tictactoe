@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    </header>
+
+    <main>
+      <section id="player-area">
+        <div id="player1">
+          <h2>player 1</h2>
+          <p>Max</p>
+          <span>X</span>
+          <button id="edit1">Edit</button>
+        </div>
+        <div id="player2">
+          <h2>player 2</h2>
+          <p>Manu</p>
+          <span>O</span>
+          <button id="edit2">Edit</button>
+        </div>
+
+        <aside id="overay">
+          <div id="overay1">
+            <h2>Choose your name</h2>
+            <p>Player name</p>
+            <input type="text" id="input-name1" />
+            <button id="cancel1">cancel</button>
+            <button id="confirm1">Confirm</button>
+          </div>
+
+          <div id="overay2">
+            <h2>Choose your name</h2>
+            <p>Player name</p>
+            <input type="text" id="input-name2" />
+            <button id="cancel2">cancel</button>
+            <button id="confirm2">Confirm</button>
+          </div>
+        </aside>
+      </section>
+
+      <section id="button">
+        <button id="start">Start New Game</button>
+      </section>
+
+      <section id="whoswin">
+        <aside>
+          <p>You won, <span id="winner"></span></p>
+          <span>Click "Start New Game" above, to start a new game!</span>
+        </aside>
+      </section>
+
+      <section id="turn">
+        <p>it's your turn <span id="whosturn"></span></p>
+      </section>
+
+      <section id="game-area">
+        <div id="1" class="tic">
+          <span></span>
+        </div>
+        <div id="2" class="tic">
+          <span></span>
+        </div>
+        <div id="3" class="tic">
+          <span></span>
+        </div>
+        <div id="4" class="tic">
+          <span></span>
+        </div>
+        <div id="5" class="tic">
+          <span></span>
+        </div>
+        <div id="6" class="tic">
+          <span></span>
+        </div>
+        <div id="7" class="tic">
+          <span></span>
+        </div>
+        <div id="8" class="tic">
+          <span></span>
+        </div>
+        <div id="9" class="tic">
+          <span></span>
+        </div>
+      </section>
+    </main>
+
+    <footer>hi</footer>
+  </body>
+</html>
