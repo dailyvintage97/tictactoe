@@ -71,23 +71,19 @@ for (const i of tics) {
 function handleClick(event) {
   const touchedpad = event.target.children[0];
   if (touchedpad.textContent == false) {
-    console.log(ddokddak);
-
-    if (ddokddak % 2 == 0) {
+    if (ddokddak % 2 == 0 || ddokddak == 9) {
       touchedpad.textContent = "X";
       ddokddak++;
       gamedone();
+      console.log(ddokddak);
     } else if (ddokddak % 2 == 1 && ddokddak < 9) {
       touchedpad.textContent = "O";
+      gamedone();
       ddokddak++;
-      gamedone();
-    } else if (ddokddak % 2 == 1 && ddokddak == 9) {
-      touchedpad.textContent = "O";
-      gamedone();
-      gametie();
+      console.log(ddokddak);
     }
   } else {
-    console.log(wrong);
+    console.log("wrong");
   }
 }
 
@@ -121,6 +117,13 @@ function player1win() {
 function player2win() {
   let player2name = document.querySelector("#player2 p").textContent;
   winner.innerText = player2name;
+  gamearea.style.display = "none";
+  whoswin.style.display = "block";
+}
+
+//무승부
+function gametie() {
+  document.querySelector("#whoswin p").innerText = "Tie!";
   gamearea.style.display = "none";
   whoswin.style.display = "block";
 }
@@ -240,12 +243,14 @@ function gamedone() {
   ) {
     console.log("win");
     player2win();
+  } else if (ddokddak == 10) {
+    gametie();
   }
 }
 
-//무승부
-function gametie() {
-  document.querySelector("#whoswin p").innerText = "Tie!";
-  gamearea.style.display = "none";
-  whoswin.style.display = "block";
-}
+// //무승부
+// function gametie() {
+//   document.querySelector("#whoswin p").innerText = "Tie!";
+//   gamearea.style.display = "none";
+//   whoswin.style.display = "block";
+// }
